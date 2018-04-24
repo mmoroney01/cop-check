@@ -5,9 +5,9 @@ class IndexController < ApplicationController
 
 	def search
 
-		suss = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCHmi2Y7HpWVwEID_Xxd0dEbGUHu3jauYY"
+		suss = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY"
 
-		
+
 
 		payload = {
    "results": [
