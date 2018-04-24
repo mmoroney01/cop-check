@@ -16,3 +16,4 @@
 # dotenv
 .env
 .byebug_history
+secrets.yml

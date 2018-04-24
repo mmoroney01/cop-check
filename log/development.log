@@ -12124,3 +12124,647 @@ Processing by IndexController#search as HTML
 Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-24 12:42:51 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 208ms (Views: 200.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=60647&commit=Search" for 127.0.0.1 at 2018-04-24 12:42:54 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"60647", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=3105+W+Diversey+Ave&commit=Search" for 127.0.0.1 at 2018-04-24 12:47:09 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"3105 W Diversey Ave", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (236.5ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<#<Class:0x007f31180e34b8>:0x007f31180e1848>
+Did you mean?  localize):
+    1: <h1>Suss</h1>
+    2: 
+    3: <%= image_tag google_map(center: location.address) %>
+  
+app/views/index/search.html.erb:3:in `_app_views_index_search_html_erb__2310558095341413969_69924416848500'
+app/controllers/index_controller.rb:13:in `search'
+Started GET "/" for 127.0.0.1 at 2018-04-24 12:49:18 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 12:49:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (123.5ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<#<Class:0x007f31180a4420>:0x007f311837db88>):
+    1: <h1>Suss</h1>
+    2: 
+    3: <% title("Home Page") %>
+    4: <h1>Google Maps Tut</h1>
+    5: <div id="map-container">
+    6:   <div id="map-canvas"></div>
+  
+app/views/index/search.html.erb:3:in `_app_views_index_search_html_erb__2310558095341413969_69924418216960'
+app/controllers/index_controller.rb:11:in `search'
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 12:53:11 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 12:57:47 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 12:57:49 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 12:57:55 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4743492859605214470)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePlaces (20180424175938)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.0ms)[0m  [1m[35mCREATE TABLE "places" ("id" bigserial primary key, "title" character varying, "address" text, "latitude" float, "longitude" float, "visited_by" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180424175938"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4743492859605214470)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:05:18 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:05:30 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:06:15 -0500
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.7ms)[0m  [1m[34mSELECT "places".* FROM "places" ORDER BY created_at DESC[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered places/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 36ms (Views: 20.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2018-04-24 13:06:16 -0500
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/_form.html.erb (161.6ms)
+  Rendered places/new.html.erb within layouts/application (162.6ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 7.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f3120d73338>:0x00555ba77fa708>):
+    18: <% end %>
+    19: 
+    20: <fieldset class="form-group">
+    21:   <%= f.label :address, 'Address' %>
+    22:   <%= f.text_field :address, class: "form-control" %>
+    23:   <small class="text-muted">You can also enter IP. Your IP is <%= request.ip %></small>
+    24: </fieldset>
+  
+app/views/places/_form.html.erb:21:in `_app_views_places__form_html_erb__4136919104366214967_46926070083700'
+app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb__4319769779288463407_46926070278240'
+Started GET "/places/new" for 127.0.0.1 at 2018-04-24 13:06:48 -0500
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/_form.html.erb (157.1ms)
+  Rendered places/new.html.erb within layouts/application (158.8ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f3120d73338>:0x007f311862bc68>):
+    18: <% end %>
+    19: 
+    20: <fieldset class="form-group">
+    21:   <%= f.text_field :address, class: "form-control" %>
+    22:   <small class="text-muted">You can also enter IP. Your IP is <%= request.ip %></small>
+    23: </fieldset>
+  
+app/views/places/_form.html.erb:21:in `_app_views_places__form_html_erb__4136919104366214967_69924450525680'
+app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb__4319769779288463407_69924450517820'
+Started GET "/places/new" for 127.0.0.1 at 2018-04-24 13:06:56 -0500
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/_form.html.erb (5.1ms)
+  Rendered places/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:07:00 -0500
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (1.3ms)[0m  [1m[34mSELECT "places".* FROM "places" ORDER BY created_at DESC[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2018-04-24 13:07:23 -0500
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XFsLqwUDQ3wYU7UW/SRYMH+daKJ3zjUDsPIAeZizhchSriBjVVilvAXAIGAN4VMQV3RgoikcJSICZmVJPp4zwA==", "place"=>{"title"=>"fd", "visited_by"=>"ds", "address"=>"dds"}, "commit"=>"Add!"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.5ms)
+
+
+  
+NameError (undefined local variable or method `country' for #<Place:0x007f3120b157f8>):
+  
+app/models/place.rb:9:in `full_address'
+app/controllers/places_controller.rb:12:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:08:26 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:08:28 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:14:43 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2018-04-24 13:19:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/places/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:19:50 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:50:34 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 206ms (Views: 199.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=f&commit=Search" for 127.0.0.1 at 2018-04-24 13:50:36 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"f", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:50:58 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:52:44 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=f&commit=Search" for 127.0.0.1 at 2018-04-24 13:52:48 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"f", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:52:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:52:58 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:55:08 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:55:10 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:55:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:55:29 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:56:03 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:57:13 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:57:57 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 13:57:58 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:01:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:01:14 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:01:22 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:01:56 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:02:34 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:02:54 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fd&commit=Search" for 127.0.0.1 at 2018-04-24 14:03:09 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fd", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=fdfda&commit=Search" for 127.0.0.1 at 2018-04-24 14:03:11 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"fdfda", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 14:04:28 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:04:30 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:07:54 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (163.8ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `lat' for #<#<Class:0x007f5ff0ca4048>:0x007f5ff0c94760>
+Did you mean?  @lat):
+     9:     </style>
+    10:   </head>
+    11:   <body>
+    12:   	<%= lat %>
+    13:     <h3>Activity in Your Area</h3>
+    14:     <div id="map"></div>
+    15:     <script>
+  
+app/views/index/search.html.erb:12:in `_app_views_index_search_html_erb__3234997278133851799_70025019150280'
+app/controllers/index_controller.rb:10:in `search'
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:08:00 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:08:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:08:44 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:08:50 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:09:03 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:09:04 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:09:13 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:11:21 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:11:22 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:11:34 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:12:00 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:12:17 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:12:23 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:12:23 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:12:33 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:13:09 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:13:39 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:46:50 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 14:46:52 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:46:53 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 14:47:24 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2018-04-24 14:47:25 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
