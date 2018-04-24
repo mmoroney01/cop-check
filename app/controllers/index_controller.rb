@@ -4,9 +4,7 @@ class IndexController < ApplicationController
 	end
 
 	def search
-		@foo = Incident.first
-
-		p @foo
+		p params['search']
 
 		render 'search'
 	end
