@@ -1,6 +1,10 @@
-<h1>Find Police Activity in Your Area!</h1>
+<h1>CopCheck</h1>
 
 <div id='address-zip-search-box'>
-
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Find Police Activity in Your Area:") %>
+  <%= text_field_tag :search, params[:search], placeholder: "Enter Address/Zip Code" %>
+  <%= submit_tag("Search") %>
+<% end %>
 </div>
 
