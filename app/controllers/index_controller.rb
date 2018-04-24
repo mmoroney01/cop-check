@@ -4,6 +4,10 @@ class IndexController < ApplicationController
 	end
 
 	def search
+		@foo = Incident.first
+
+		p @foo
+
 		render 'search'
 	end
 end
