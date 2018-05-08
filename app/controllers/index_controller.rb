@@ -7,7 +7,7 @@ class IndexController < ApplicationController
 
       p params[:address]
 
-		suss = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCHmi2Y7HpWVwEID_Xxd0dEbGUHu3jauYY"
+		suss = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key="
 
 		payload = {
    "results": [
