@@ -15520,3 +15520,656 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:35:21 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:35:24 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCHmi2Y7HpWVwEID_Xxd0dEbGUHu3jauYY):
+  
+app/controllers/index_controller.rb:12:in `initialize'
+app/controllers/index_controller.rb:12:in `open'
+app/controllers/index_controller.rb:12:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:36:00 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:36:02 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCHmi2Y7HpWVwEID_Xxd0dEbGUHu3jauYY):
+  
+app/controllers/index_controller.rb:12:in `initialize'
+app/controllers/index_controller.rb:12:in `open'
+app/controllers/index_controller.rb:12:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:37:39 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:37:41 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 220ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:38:45 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:38:47 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/index_controller.rb:98:in `[]'
+app/controllers/index_controller.rb:98:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:40:16 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:40:18 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:100:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:40:43 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=2316+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:40:45 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"2316 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:100:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:41:55 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:42:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:42:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 261ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:42:28 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:42:32 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=313+North+Michigan+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:42:35 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"313 North Michigan Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 217ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:43:25 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:43:27 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 226ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:43:55 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:43:57 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 250ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:44:58 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=2104+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:44:59 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"2104 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/index_controller.rb:19:in `[]'
+app/controllers/index_controller.rb:19:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:45:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:45:09 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 508ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/index_controller.rb:19:in `[]'
+app/controllers/index_controller.rb:19:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:45:20 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:45:21 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 233ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:45:57 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:45:59 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 170ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:46:12 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:46:14 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 225ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:46:24 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:46:26 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 365ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:46:54 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:46:56 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 655ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:18:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:47:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:47:16 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 167ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:47:49 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:47:51 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 189ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:48:21 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:48:23 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 173ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:48:33 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3131+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:48:36 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3131 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 207ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:49:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:49:08 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 175ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:49:49 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:49:51 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 187ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:50:05 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:50:07 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 206ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:52:34 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:52:36 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/index_controller.rb:11:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:52:48 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=2+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:52:50 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"2 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 231ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:54:44 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:54:46 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 295ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:55:21 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:55:23 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 943ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:30:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:57:00 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:57:02 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 695ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:29:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:57:20 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:57:22 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 249ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:30:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:57:50 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:57:52 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:30:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:58:18 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:58:20 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:30:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:59:21 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:59:24 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:59:25 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:30:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 15:59:45 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 15:59:46 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+Completed 500 Internal Server Error in 614ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/index_controller.rb:30:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:00:04 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:00:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 306ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:00:13 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:00:16 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 850ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=604+Mulberry+Place%2C+Highland+Park%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:00:27 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"604 Mulberry Place, Highland Park, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 770ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:00:45 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+West+Diversey+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:00:51 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 West Diversey Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 811ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:00:59 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:01:01 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 303ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:01:08 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=158+Spoonville+Road%2C+East+Granby%2C+CT%2C+USA" for 127.0.0.1 at 2018-05-08 16:02:00 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"158 Spoonville Road, East Granby, CT, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 869ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
