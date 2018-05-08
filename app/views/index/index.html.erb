@@ -1,10 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
 <h1>CopCheck</h1>
 
-<div id='address-zip-search-box'>
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Find Police Activity in Your Area:") %>
-  <%= text_field_tag :search, params[:search], placeholder: "Enter Address/Zip Code" %>
-  <%= submit_tag("Search") %>
-<% end %>
-</div>
+<form action="/search" method="get">
+  <input type="text" name="address" id="search" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+<br><br>
+
+<script>
+	function activatePlacesSearch(){
+		var input = document.getElementById('search');
+		var autocomplete = new google.maps.places.Autocomplete(input);
+	}
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPIKAUDRZCkaQiUyYjuBMLHFzoWHpYggM&libraries=places&callback=activatePlacesSearch"></script>
+	
+</body>
+</html>
+
+
 
