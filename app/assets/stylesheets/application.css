@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+h1.copcheck-logo {
+	text-align: center;
+}
+
+div.search-bar-div {
+    width: 100%;
+    text-align:center;
+}
+
+#map {
+	float: right;
+	height: 400px;
+	margin-right: 2%;
+    width: 40%;
+}
+
+#search {
+	display: inline-block;
+	width: 40%;
+}

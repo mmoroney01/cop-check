@@ -16173,3 +16173,1546 @@ Processing by IndexController#search as HTML
 Completed 200 OK in 869ms (Views: 36.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:04:12 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=Beverly+Hills%2C+CA+90210%2C+USA" for 127.0.0.1 at 2018-05-08 16:04:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"Beverly Hills, CA 90210, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1045ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:04:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=902+North+State+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:04:43 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"902 North State Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1123ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=18+Campus+Circle%2C+Lake+Forest%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:20:21 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"18 Campus Circle, Lake Forest, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 822ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:20:41 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:20:43 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1078ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:21:48 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:25:27 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:25:28 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:25:44 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:25:57 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:25:58 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:26:24 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:26:41 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:27:13 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:27:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:27:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:27:35 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:27:59 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:28:09 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:28:31 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:29:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:29:19 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:29:52 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:30:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:30:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:31:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:31:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:31:57 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:32:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:32:31 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:32:31 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:32:50 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:22 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:23 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:32 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:45 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:33:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:34:38 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:35:58 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:36:18 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:36:34 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:36:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:37:13 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:37:19 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:37:33 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:37:38 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:38:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:38:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:38:47 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:38:54 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:39:24 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:39:37 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:39:44 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:39:48 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:39:53 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:40:34 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:40:45 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:40:54 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:41:42 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:41:43 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:42:42 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:42:42 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:43:04 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:43:23 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:43:28 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:44:00 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:44:03 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 810ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:44:51 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:44:57 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:45:01 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:45:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:45:11 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:45:27 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:45:53 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:47:31 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:47:55 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 677ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:48:37 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 731ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:48:58 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 278ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:49:21 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 289ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:49:35 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 299ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:49:40 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 284ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:49:48 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 273ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:49:55 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 291ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:49:59 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 260ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:50:09 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 897ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:50:24 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 258ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:50:33 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 238ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:50:44 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 247ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:50:48 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 420ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:52:22 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 389ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:52:44 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 276ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:52:56 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 287ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:53:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 291ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:53:14 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 291ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:53:36 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=Diversey+%26+Albany%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:55:04 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"Diversey & Albany, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 815ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=Diversey+%26+Kedzie%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:55:18 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"Diversey & Kedzie, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 673ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:57:27 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:57:31 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:58:04 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 787ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=First+Sip+Cafe%2C+West+Argyle+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 16:58:17 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"First Sip Cafe, West Argyle Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 884ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 16:59:30 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:00:43 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:00:46 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 856ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:00:57 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 293ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:01:24 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:01:27 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:01:57 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:02:09 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:02:45 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=604+Mulberry+Place%2C+Highland+Park%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:02:56 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"604 Mulberry Place, Highland Park, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 536ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:03:55 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:04:33 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:05:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:05:22 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:05:25 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:05:53 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:06:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:06:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 717ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=Boystown%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:06:34 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"Boystown, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 731ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=Studio+City%2C+Los+Angeles%2C+CA%2C+USA" for 127.0.0.1 at 2018-05-08 17:06:43 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"Studio City, Los Angeles, CA, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 931ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:07:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:07:54 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:08:23 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:08:39 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:09:51 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:09:58 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:10:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:10:37 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 928ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:11:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:11:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3101+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:11:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3101 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 838ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:14:36 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:14:39 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 909ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (':_search' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    23: </div>
+    24: 
+    25: <% if @lat %>
+    26:   <%= render :_search %>
+    27: <% end %>
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067129074520'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:16:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:16:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 860ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: <% if @lat %>
+    26:   <%= render :partial => "_search" %>
+    27: <% end %>
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067242977860'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:17:51 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:17:53 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 559ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: <% if @lat %>
+    26:   <%= render :partial => "_search" %>
+    27: <% end %>
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067128894160'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:18:53 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:18:56 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: <% if @lat %>
+    26:   <%= render 'shared/_search' %>
+    27: <% end %>
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067058799440'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:19:17 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:19:19 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial views/shared/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: <% if @lat %>
+    26:   <%= render 'views/shared/_search' %>
+    27: <% end %>
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067362215780'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:20:44 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:20:47 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 613ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial views/shared/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: <% if @lat %>
+    26:   <%= render :partial => 'views/shared/_search' -%>
+    27: <% end %>
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067229888620'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:22:13 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:22:15 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 659ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    24: 
+    25: 
+    26: <% if @lat %>
+    27:   <%= render "_search" -%>
+    28: <% end %>
+    29: 
+    30: 
+  
+app/views/index/index.html.erb:27:in `_app_views_index_index_html_erb__3451419276521023662_70067252619700'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:23:10 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:23:13 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    24: 
+    25: 
+    26: <% if @lat %>
+    27:   <%= render "_search" -%>
+    28: <% end %>
+    29: 
+    30: 
+  
+app/views/index/index.html.erb:27:in `_app_views_index_index_html_erb__3451419276521023662_47111913576240'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:24:49 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:24:51 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    24: 
+    25: 
+    26: <% if @lat %>
+    27:   <%= render "_search" -%>
+    28: <% end %>
+    29: 
+    30: 
+  
+app/views/index/index.html.erb:27:in `_app_views_index_index_html_erb__3451419276521023662_70067161225400'
+app/controllers/index_controller.rb:21:in `search'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:28:11 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26:   <%= render '_search' -%>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067257740960'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:28:23 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26: <%= render '_search' %>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067126069800'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:29:26 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26: <%= render '_search' %>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067129783840'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:31:21 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26: <%= render '_search' %>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067244456120'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:31:26 -0500
+Processing by IndexController#index as HTML
+  Rendering index/_search.html.erb within layouts/application
+  Rendered index/_search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:31:32 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search, application/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26: <%= render '_search' %>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067060310580'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:32:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26: <%= render 'index/_search' %>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067126331220'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:43:32 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    23: </div>
+    24: 
+    25: 
+    26: <%= render "index/_search" %>
+    27: 
+    28: 
+    29: <script>
+  
+app/views/index/index.html.erb:26:in `_app_views_index_index_html_erb__3451419276521023662_70067130216480'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:44:35 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial index/__search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/cop-check/app/views"
+):
+    35: 
+    36: <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPIKAUDRZCkaQiUyYjuBMLHFzoWHpYggM&libraries=places&callback=activatePlacesSearch"></script>
+    37: 
+    38: <%= render "index/_search" %>
+    39: </body>
+    40: </html>
+  
+app/views/index/index.html.erb:38:in `_app_views_index_index_html_erb__3451419276521023662_70067056423340'
+app/controllers/index_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:50:40 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:50:43 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 723ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:50:48 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 285ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:50:53 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 983ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:50:59 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 323ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-08 17:54:19 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+West+Diversey+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-08 17:54:49 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 West Diversey Avenue, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 698ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-09 08:57:35 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 200ms (Views: 194.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-09 08:57:42 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 728ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=First+Sip+Cafe%2C+West+Argyle+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-09 08:58:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"First Sip Cafe, West Argyle Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 828ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-09 09:07:03 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-09 09:07:06 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 619ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-09 09:07:29 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-09 09:07:31 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 300ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-09 09:10:05 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+

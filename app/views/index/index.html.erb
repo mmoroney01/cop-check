@@ -5,13 +5,22 @@
 	<title>Document</title>
 </head>
 <body>
-<h1>CopCheck</h1>
 
-<form action="/search" method="get">
-  <input type="text" name="address" id="search" placeholder="Search...">
-  <button type="submit">Search</button>
-</form>
-<br><br>
+<h1 class="copcheck-logo">Cop Check</h1>
+
+<ul>
+  <li class="activity-your-area">Activity in Your Area</li>
+  <li class="submit-incident">Submit Incident</li>
+  <li class="check-cops">Check Cops</li>
+  <li class="know-your-rights">Know Your Rights</li>
+</ul>
+
+<div class="search-bar-div">
+  <form action="/search" method="get" class="search-bar">
+    <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+    <button type="submit">Search</button>
+  </form>
+</div>
 
 <script>
 	function activatePlacesSearch(){
@@ -24,6 +33,3 @@
 	
 </body>
 </html>
-
-
-
