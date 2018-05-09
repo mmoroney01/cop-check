@@ -9,7 +9,7 @@ class IndexController < ApplicationController
   def search
     address = params[:address].gsub(/\s/,'+')
 
-    url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{address}&key="
+    url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{address}&key=#{ENV['GEOCODER']}"
 
     uri = URI.parse(url)
     response = Net::HTTP.get_response uri
