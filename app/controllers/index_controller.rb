@@ -11,6 +11,14 @@ class IndexController < ApplicationController
       @lat = payload["results"][0]["geometry"]["location"]["lat"]
       @lng = payload["results"][0]["geometry"]["location"]["lng"]
 
+      @incidents = []
+
+      Incident.all.each do |incident|
+        @incidents << [incident.latitude, incident.longitude]
+      end
+
+      p @incidents
+
       render 'search'
     end
   end
