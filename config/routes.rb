@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 	post '/file' => 'index#fileform'
 	post '/submit_incident' => 'index#submit_incident'
 
+	get '/incident/:id' => 'index#see_incident'
+
 end
