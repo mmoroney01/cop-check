@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h1 class="copcheck-logo"><a href="/">Cop Check</a></h1>
+
+<div class="incident" data-lat=<%= @incident.latitude %> data-lng=<%= @incident.longitude%>>
+	<div class="single-incident">
+	<%= @incident.address %>
+	<br>
+	<%= @incident.description %>
+	</div>
+</div>
+
+<div id="map"></div>
+<script>
+  function initMap() {
+  	var point = document.querySelector('.incident')
+  	var $lat = parseFloat(point.dataset.lat);
+  	var $lng = parseFloat(point.dataset.lng);
+
+    var center = {lat: $lat, lng: $lng};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: center
+    });
+
+    var marker = new google.maps.Marker({
+      position: {lat: $lat, lng: $lng},
+      map: map
+    });
+  }
+</script>
+        
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
+</script>
+</body>
+</html>

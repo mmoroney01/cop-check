@@ -29,6 +29,11 @@ div.file-incident-form-div {
 	width: 100%;
 }
 
+.incident {
+	float: left;
+	margin-left: 2%;
+}
+
 #incident-description {
 	width: 40%;
 }
@@ -48,6 +53,10 @@ div.file-incident-form-div {
 #search {
 	display: inline-block;
 	width: 40%;
+}
+
+.single-incident {
+	margin-left: 2%;
 }
 
 textarea {

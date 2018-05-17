@@ -42,6 +42,12 @@ class IndexController < ApplicationController
     render 'fileform'
   end
 
+  def see_incident
+    @incident = Incident.find(params[:id])
+
+    render 'incident'
+  end
+
 
 
   private

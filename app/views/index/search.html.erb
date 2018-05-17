@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -12,7 +12,8 @@
   <h4 class="incidents-near">Incidents Near <%= @address %></h4>
   <% @incidents.each do |incident| %>
     <div class="incident">
-      <%= incident.address %><br>
+      <a href="/incident/<%= incident.id %>"><%= incident.address %></a>
+      <br>
       <%= incident.description %>
       <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
       </div>
