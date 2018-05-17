@@ -1,5 +1,6 @@
 require 'net/http'
 require 'uri'
+require 'geokit'
 
 class IndexController < ApplicationController
   def search
@@ -8,16 +9,13 @@ class IndexController < ApplicationController
     else
       payload = make_payload(params[:address])
 
+      @address = params[:address]
+
       @lat = payload["results"][0]["geometry"]["location"]["lat"]
       @lng = payload["results"][0]["geometry"]["location"]["lng"]
 
-      @incidents = []
-
-      Incident.all.each do |incident|
-        @incidents << [incident.latitude, incident.longitude]
-      end
-
-      p @incidents
+      @incidents = Incident.all
+      @incidents = @incidents.select{|incident| distance([@lat, @lng], [incident.latitude, incident.longitude]) <= 2}
 
       render 'search'
     end
@@ -29,8 +27,9 @@ class IndexController < ApplicationController
     lat = payload["results"][0]["geometry"]["location"]["lat"]
     lng = payload["results"][0]["geometry"]["location"]["lng"]
     desc = params[:description]
+    address = params[:address]
 
-    Incident.create(:latitude => lat, :longitude => lng, :description => desc)
+    Incident.create(:latitude => lat, :longitude => lng, :description => desc, :address => address)
 
     redirect_to :action => "index"
   end
@@ -43,6 +42,8 @@ class IndexController < ApplicationController
     render 'fileform'
   end
 
+
+
   private
   def make_payload(params)
     address = params.gsub(/\s/,'+')
@@ -50,5 +51,11 @@ class IndexController < ApplicationController
     uri = URI.parse(url)
     response = Net::HTTP.get_response uri
     payload = JSON.parse(response.body)
+  end
+
+  def distance(a,b)
+    current_location = Geokit::LatLng.new(a[0],a[1])
+    destination = "#{b[0]}, #{b[1]}"
+    current_location.distance_to(destination) 
   end
 end
