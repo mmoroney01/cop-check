@@ -23,6 +23,10 @@ div.search-bar-div {
     text-align:center;
 }
 
+div.file-incident-div {
+	width: 100%;
+}
+
 #map {
 	float: right;
 	height: 400px;

@@ -1,1 +1,29 @@
-<h1>Just nod if you can hear me!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h1>File Incident</h1>
+
+<div class="file-incident-form-div">
+  <form action="/submit_incident" method="post" class="file-incident-address-bar">
+    <input type="text" name="address" id="search" placeholder="Where did this happen?"><br>
+    <textarea name="description" rows="4" cols="50" id="incident-description" placeholder="What happened?"></textarea><br>
+    <button type="submit">File</button>
+  </form>
+</div>
+
+<script>
+	function activatePlacesSearch(){
+		var input = document.getElementById('search');
+		var autocomplete = new google.maps.places.Autocomplete(input);
+	}
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch"></script>
+
+</body>
+</html>
+
