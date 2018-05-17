@@ -9,17 +9,13 @@ class IndexController < ApplicationController
     else
       payload = make_payload(params[:address])
 
+      @address = params[:address]
+
       @lat = payload["results"][0]["geometry"]["location"]["lat"]
       @lng = payload["results"][0]["geometry"]["location"]["lng"]
 
       @incidents = Incident.all
       @incidents = @incidents.select{|incident| distance([@lat, @lng], [incident.latitude, incident.longitude]) <= 2}
-
-      p @incidents
-
-      # @incidents.each do |incident|
-      #   @incidents << [incident.latitude, incident.longitude]
-      # end
 
       render 'search'
     end
@@ -46,7 +42,7 @@ class IndexController < ApplicationController
     render 'fileform'
   end
 
-  
+
 
   private
   def make_payload(params)

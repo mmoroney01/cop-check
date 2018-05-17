@@ -15,7 +15,8 @@
  */
 
 h1.copcheck-logo {
-	text-align: center;
+	text-align: left;
+	margin-left: 2%;
 }
 
 div.search-bar-div {
@@ -23,8 +24,18 @@ div.search-bar-div {
     text-align:center;
 }
 
-div.file-incident-div {
+div.file-incident-form-div {
+	margin-left: 2%;
 	width: 100%;
+}
+
+#incident-description {
+	width: 40%;
+}
+
+#incident-list {
+	float: left;
+	margin-left: 2%;
 }
 
 #map {
@@ -37,4 +48,8 @@ div.file-incident-div {
 #search {
 	display: inline-block;
 	width: 40%;
+}
+
+textarea {
+	resize: none;
 }

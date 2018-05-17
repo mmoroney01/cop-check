@@ -23277,3 +23277,463 @@ Processing by IndexController#search as HTML
 Completed 200 OK in 710ms (Views: 28.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/search?address=604+Mulberry+Place%2C+Highland+Park%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:47:24 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"604 Mulberry Place, Highland Park, IL, USA"}
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 162ms (Views: 35.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/search?address=3105+North+Western+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:47:31 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Western Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 591ms (Views: 55.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 16:48:07 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:51:09 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 926ms (Views: 41.5ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:51:38 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 165ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:51:57 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (1.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 206ms (Views: 75.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:52:07 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 155ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:53:21 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 124ms (Views: 11.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:53:42 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 601ms (Views: 60.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:53:51 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 193ms (Views: 70.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:54:14 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (2.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 197ms (Views: 75.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:54:48 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 246ms (Views: 138.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:55:07 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (1.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 269ms (Views: 90.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:55:24 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 216ms (Views: 91.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/search?address=3105+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:55:32 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3105 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 219ms (Views: 85.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 16:56:58 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3181+North+Milwaukee+Avenue%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:58:05 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3181 North Milwaukee Avenue, Chicago, IL, USA"}
+  [1m[36mIncident Load (1.2ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 803ms (Views: 81.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/search?address=3160+North+Halsted+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 16:58:59 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3160 North Halsted Street, Chicago, IL, USA"}
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 766ms (Views: 72.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 16:59:26 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/file" for 127.0.0.1 at 2018-05-17 16:59:36 -0500
+Processing by IndexController#fileform as HTML
+  Parameters: {"authenticity_token"=>"mxNjS1z3ruzJveKkyOfUsSkRAAXycLL24Sy1f41pCD9kdGwNvsYMAa6MUqQ9XoFLGf2XiOYIascjDkBNlcCq/A=="}
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:00:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/file" for 127.0.0.1 at 2018-05-17 17:00:04 -0500
+Processing by IndexController#fileform as HTML
+  Parameters: {"authenticity_token"=>"Ad+cFHBSqwr5PJaa7Elv60/xhorO6a4rQr/vjmjxF7D+uJNSkmMJ554NJpoZ8DoRfx0RB9qRdhqAnRq8cFi1cw=="}
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:00:12 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:00:31 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:00:44 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:00:51 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:01:12 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:01:44 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:02:28 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:02:53 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:02:58 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:03:04 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:03:10 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:03:29 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:03:34 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:03:39 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:03:43 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:05:14 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:05:55 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:05:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:06:01 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:06:26 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/file" for 127.0.0.1 at 2018-05-17 17:06:28 -0500
+Processing by IndexController#fileform as HTML
+  Parameters: {"authenticity_token"=>"X+1n0q1BAyG16He3djjrRwY8p8jeJGiP4O30rIGyC0OgimiUT3ChzNLZx7eDgb69NtAwRcpcsL4izwGemRupgA=="}
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:06:29 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:07:14 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/file" for 127.0.0.1 at 2018-05-17 17:07:15 -0500
+Processing by IndexController#fileform as HTML
+  Parameters: {"authenticity_token"=>"tOy6glYkHJ3fUdu+LQ83Vvri0RdqnRkZLzhlm5y+6HFLi7XEtBW+cLhga77YtmKsyg5Gmn7lwSjtGpCphBdKsg=="}
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:07:16 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:09:35 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/file" for 127.0.0.1 at 2018-05-17 17:09:37 -0500
+Processing by IndexController#fileform as HTML
+  Parameters: {"authenticity_token"=>"PzAWKDQsENmfKVPGPOi0TYmuooeTR3SchJERLwDYi5fAVxlu1h2yNPgY48bJUeG3uUI1Coc/rK1Gs+QdGHEpVA=="}
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:09:38 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/file" for 127.0.0.1 at 2018-05-17 17:09:40 -0500
+Processing by IndexController#fileform as HTML
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:10:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:11:56 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:11:57 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/file" for 127.0.0.1 at 2018-05-17 17:11:58 -0500
+Processing by IndexController#fileform as HTML
+  Parameters: {"authenticity_token"=>"h5mHgwpy5g4Z13sAZQw/LgOcfLUZOHGw5BXvQlJBG+mbucAoVPyu/FWmh6b7BG9+DWv2Au/pnMuN2qRRaDrKNA=="}
+  Rendering index/fileform.html.erb within layouts/application
+  Rendered index/fileform.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:11:59 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?address=3134+North+Clark+Street%2C+Chicago%2C+IL%2C+USA" for 127.0.0.1 at 2018-05-17 17:12:02 -0500
+Processing by IndexController#search as HTML
+  Parameters: {"address"=>"3134 North Clark Street, Chicago, IL, USA"}
+  [1m[36mIncident Load (1.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents"[0m
+  Rendering index/search.html.erb within layouts/application
+  Rendered index/search.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 762ms (Views: 80.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:12:03 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:13:09 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 17:15:26 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
