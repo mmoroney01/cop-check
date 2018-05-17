@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <h1 class="copcheck-logo">Cop Check</h1>
+<head>
+</head>
+<body>
+<h1 class="copcheck-logo">Cop Check</h1>
 
-    <div id="incident-list">
-      <h1>Incident List</h1>
+<div id="incident-list">
+  <h1>Incident List</h1>
+  <% @incidents.each do |incident| %>
+    <% incident.address %>
+    <%= incident.description %>
+    <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
     </div>
+  <% end %>
+</div>
     
-    <div id="map"></div>
+<div id="map"></div>
+<script>
+  function initMap() {
+    var center = {lat: <%= @lat %>, lng: <%= @lng %>};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: center
+    });
+    
+    var points = document.querySelectorAll('.lat-lng')
 
-    <script>
-      function initMap() {
-        var incidents = <%= @incidents %>;
-        var uluru = {lat: <%= @lat %>, lng: <%= @lng %>};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: uluru
-        });
-      
-        incidents.forEach((cords) => {
-            var marker = new google.maps.Marker({
-            position: {lat: cords[0], lng: cords[1]},
-            map: map
-          });
-        });
-      }
-   </script>
+    points.forEach((point) => {
+      var $lat = parseFloat(point.dataset.lat);
+      var $lng = parseFloat(point.dataset.lng);
+
+      var marker = new google.maps.Marker({
+      position: {lat: $lat, lng: $lng},
+      map: map
+      });
+    });
+  }
+</script>
         
-    <script async defer
+<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
-    </script>
-  </body>
+</script>
+</body>
 </html>
