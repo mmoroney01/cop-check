@@ -1,10 +1,20 @@
 
+h4 {
+	padding: 0px;
+    margin: 1px;
+}
+
 .copcheck-logo {
 	float: left;
 }
 
 .file-incident-button-div {
  	float: right;
+}
+
+#incidents-near-and-list{
+	float: left;
+	flex: 1;
 }
 
 #index-page {
@@ -35,10 +45,12 @@
 }
 
 .search-bar-and-map {
-	border-style: solid;
-	border-color: black;
 	height: 100%;
 	width: 400px;
+}
+
+.search-bar-map-incidents {
+	display: flex;
 }
 
 .search-button {
@@ -77,8 +89,8 @@
 
 
 .incident {
-	float: left;
-	margin-left: 2%;
+/*	float: left;
+	margin-left: 2%;*/
 }
 
 #incident-search {
@@ -90,23 +102,21 @@
 }
 
 #incident-list {
-	position: absolute;
-	top: 30%;
-	right: 5%;
-	width: 38%;
-	height: 50%;
-	overflow: auto;
+	margin-top: 2%;
 }
 
 #incidents-near {
-	position: absolute;
+	margin-left: 2%;
+	text-decoration: underline;
+/*	position: absolute;
 	top: 15%;
 	right: 4%;
-	width: 40%;
+	width: 40%;*/
 }
 
 #no-incidents {
-	float: left;
+	margin-left: 2%
+/*	float: left;*/
 }
 
 

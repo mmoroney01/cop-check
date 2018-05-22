@@ -17,37 +17,59 @@
     })(jQuery);
 </script> -->
 
-<div id="search-bar-and-map-and-feed">
-  <div class="search-bar-and-map">
-    <div class="search-bar-div">
-      <form action="/search" method="get" class="search-bar">
-        <input type="text" name="address" id="search" placeholder="search for police activity in your area">
-        <button id="search-button" type="submit">Search</button>
+<div id="search-page">
+  
+  <div class="nav-bar">
+
+    <div class="copcheck-logo">
+      <h1><a href="/">Cop Check</a></h1>
+    </div>
+
+    <div class="file-incident-button-div">
+      <form action="/file" method="get">
+      <button id="file-incident-button" type="submit">File Incident</button>
       </form>
     </div>
-    
-    <div id="map"></div>
-  </div>
-  
-  <div id="incidents-near">
-    <% if !@incidents.empty? %>
-    <h4>Incidents Near <%= @address %></h4>
-    <% else %>
-    <h4 id="no-incidents">No Incidents Nearby!</h4>
-    <% end %>
+
   </div>
 
-  <div id="incident-list">
-     <% @incidents.each do |incident| %>
-      <div class="incident">
-        <a href="/incident/<%= incident.id %>"><%= incident.address %></a>
-        <br>
-        <%= incident.description %>
-        <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
-        </div>
+  <div class="search-bar-map-incidents">
+
+    <div class="search-bar-and-map">
+      <div class="search-bar-div">
+        <form action="/search" method="get" class="search-bar">
+          <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+          <button class="search-button" type="submit">Search</button>
+        </form>
       </div>
-      <br>
-    <% end %>
+    
+      <div id="map"></div>
+    </div>
+  
+    <div id="incidents-near-and-list">
+      <div id="incidents-near">
+        <% if !@incidents.empty? %>
+        <h4>Incidents Near <%= @address %></h4>
+        <% else %>
+        <h4 id="no-incidents">No Incidents Nearby!</h4>
+        <% end %>
+      </div>
+
+      <div id="incident-list">
+         <ul>
+         <% @incidents.each do |incident| %>
+          <div class="incident">
+            <li><a href="/incident/<%= incident.id %>"><%= incident.address %></a></li>
+            <br>
+            <%= incident.description %>
+            <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
+            </div>
+          </div>
+          <br>
+        <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -79,7 +101,7 @@
 
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  -->
-<!-- <script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script> -->
+<script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script>
   function activatePlacesSearch(){
