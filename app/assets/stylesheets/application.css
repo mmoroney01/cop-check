@@ -1,64 +1,47 @@
 
-h1.copcheck-logo {
-	text-align: left;
-	margin-left: 2%;
-	width: 15%;
-}
-
-div.file-incident-form-div {
-	margin-left: 2%;
-	width: 100%;
-}
-
-#file-incident-button {
-  margin-left: 2%;
-  color: #0099CC; /* Text color */
-  background-color: transparent; /* Remove background color */
-  border: 2px solid #0099CC; /* Border thickness, line style, and color */
-  border-radius: 5px; /* Adds curve to border corners */
-  text-transform: uppercase; /* Make letters uppercase */
-}
-
-.incident {
+.copcheck-logo {
 	float: left;
-	margin-left: 2%;
 }
 
-#incident-description {
-	width: 40%;
+.file-incident-button-div {
+ 	float: right;
 }
 
-#incident-list {
-	border-color: black;
-	border-style: solid;
-	float: left;
-	height: 100px;
-	overflow: auto;
-	margin-left: 2%;
+#index-page {
+	margin: 2% 2% 2% 2%;
+	min-height: 100%;
 }
 
 #map {
 	height: 400px;
 }
 
+.nav-bar {
+	display: inline-block;
+}
+
 #search {
-	display: inline;
-	width: 85%;
+	width: 81%;
+	float: left;
+}
+
+.search-bar-div {
+	display: flex;
 }
 
 .search-bar {
-
+	width: 100%;
+	float: left;
 }
 
 .search-bar-and-map {
-	border-color: black;
 	border-style: solid;
-	border-width: 1px;
-	float: right;
-	width: 50%;
+	border-color: black;
+	height: 100%;
+	width: 400px;
 }
 
-#search-button {
+.search-button {
 	float: right;
 	color: #0099CC; /* Text color */
 	background-color: transparent; /* Remove background color */
@@ -66,6 +49,75 @@ div.file-incident-form-div {
 	border-radius: 5px; /* Adds curve to border corners */
 	text-transform: uppercase; /* Make letters uppercase */
 }
+
+
+
+
+
+
+
+
+#file-incident-form-div {
+	border-color: black;
+	border-style: solid;
+	position: absolute;
+	top: 14%;
+	left: 5%;
+	width: 50%;
+}
+
+
+#file-incident-button {
+  color: #0099CC; /* Text color */
+  background-color: transparent; /* Remove background color */
+  border: 2px solid #0099CC; /* Border thickness, line style, and color */
+  border-radius: 5px; /* Adds curve to border corners */
+  text-transform: uppercase; /* Make letters uppercase */
+}
+
+
+.incident {
+	float: left;
+	margin-left: 2%;
+}
+
+#incident-search {
+	width: 99%;
+}
+
+#incident-description {
+	width: 99%;
+}
+
+#incident-list {
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	width: 38%;
+	height: 50%;
+	overflow: auto;
+}
+
+#incidents-near {
+	position: absolute;
+	top: 15%;
+	right: 4%;
+	width: 40%;
+}
+
+#no-incidents {
+	float: left;
+}
+
+
+
+
+
+
+#search-bar-and-map-and-feed {
+}
+
+
 
 .single-incident {
 	margin-left: 2%;
@@ -77,6 +129,9 @@ div.file-incident-form-div {
   border: 2px solid #0099CC; /* Border thickness, line style, and color */
   border-radius: 5px; /* Adds curve to border corners */
   text-transform: uppercase; /* Make letters uppercase */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 textarea {

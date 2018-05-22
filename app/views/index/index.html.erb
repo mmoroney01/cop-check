@@ -3,51 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
-<div id="file-incident-button-div">
-  <form action="/file" method="get">
-  <button id="file-incident-button" type="submit">File Incident</button>
-  </form>
-</div>
+<div id="index-page">
 
-<!-- <div class="search-bar-div">
-  <form action="/search" method="get" class="search-bar">
-    <input type="text" name="address" id="search" placeholder="search for police activity in your area">
-    <button id="search-button" type="submit">Search</button>
-  </form>
-</div>
- -->
-<div class="search-bar-and-map">
-  <div class="search-bar-div">
-    <form action="/search" method="get" class="search-bar">
-      <input type="text" name="address" id="search" placeholder="search for police activity in your area">
-      <button id="search-button" type="submit">Search</button>
-    </form>
+  <div class="nav-bar">
+
+    <div class="copcheck-logo">
+      <h1><a href="/">Cop Check</a></h1>
+    </div>
+
+    <div class="file-incident-button-div">
+      <form action="/file" method="get">
+      <button id="file-incident-button" type="submit">File Incident</button>
+      </form>
+    </div>
+
   </div>
+
+  <div class="search-bar-and-map">
+    <div class="search-bar-div">
+      <form action="/search" method="get" class="search-bar">
+        <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+        <button class="search-button" type="submit">Search</button>
+      </form>
+    </div>
     
-  <div id="map"></div>
+    <div id="map"></div>
+  </div>
 </div>
 
 <script>
   function initMap() {
-    var center = {lat: <%= @lat %>, lng: <%= @lng %>};
+    var center = {lat: 37, lng: -97};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
+      zoom: 3,
       center: center
-    });
-    
-    var points = document.querySelectorAll('.lat-lng')
-
-    points.forEach((point) => {
-      var $lat = parseFloat(point.dataset.lat);
-      var $lng = parseFloat(point.dataset.lng);
-
-      var marker = new google.maps.Marker({
-      position: {lat: $lat, lng: $lng},
-      map: map
-      });
     });
   }
 </script>
@@ -55,8 +54,6 @@
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
 </script>
-
-
 
 <script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 

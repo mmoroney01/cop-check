@@ -17,6 +17,8 @@ class IndexController < ApplicationController
       @incidents = Incident.all
       @incidents = @incidents.select{|incident| distance([@lat, @lng], [incident.latitude, incident.longitude]) <= 2}
 
+      p @lat
+
       render 'search'
     end
   end
