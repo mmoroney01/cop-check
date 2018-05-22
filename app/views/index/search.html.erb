@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-
-  <link rel="stylesheet" href="./assets/stylesheets/jquery.mCustomScrollbar.css" />
 </head>
 <body>
 
@@ -22,15 +20,24 @@
   <% end %>
 </div>
 
-<script>
+<!-- <script>
     (function($){
         $(window).on("load",function(){
             $(".content").mCustomScrollbar();
         });
     })(jQuery);
-</script>
+</script> -->
+
+<div class="search-bar-and-map">
+  <div class="search-bar-div">
+    <form action="/search" method="get" class="search-bar">
+      <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+      <button id="search-button" type="submit">Search</button>
+    </form>
+  </div>
     
-<div id="map"></div>
+  <div id="map"></div>
+</div>
 
 <script>
   function initMap() {
@@ -58,8 +65,18 @@
     src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
 </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ -->
 <script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script>
+  function activatePlacesSearch(){
+    var input = document.getElementById('search');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  }
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch"></script>
 
 </body>
 </html>

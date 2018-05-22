@@ -6,18 +6,59 @@
 </head>
 <body>
 
-<ul>
-  <%= button_to "File Incident", action: "fileform" %>
-  <li class="check-cops">Check Cops (Coming Soon!)</li>
-  <li class="know-your-rights">Know Your Rights (Coming Maybe!)</li>
-</ul>
-
-<div class="search-bar-div">
-  <form action="/search" method="get" class="search-bar">
-    <input type="text" name="address" id="search" placeholder="search for police activity in your area">
-    <button type="submit">Search</button>
+<div id="file-incident-button-div">
+  <form action="/file" method="get">
+  <button id="file-incident-button" type="submit">File Incident</button>
   </form>
 </div>
+
+<!-- <div class="search-bar-div">
+  <form action="/search" method="get" class="search-bar">
+    <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+    <button id="search-button" type="submit">Search</button>
+  </form>
+</div>
+ -->
+<div class="search-bar-and-map">
+  <div class="search-bar-div">
+    <form action="/search" method="get" class="search-bar">
+      <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+      <button id="search-button" type="submit">Search</button>
+    </form>
+  </div>
+    
+  <div id="map"></div>
+</div>
+
+<script>
+  function initMap() {
+    var center = {lat: <%= @lat %>, lng: <%= @lng %>};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: center
+    });
+    
+    var points = document.querySelectorAll('.lat-lng')
+
+    points.forEach((point) => {
+      var $lat = parseFloat(point.dataset.lat);
+      var $lng = parseFloat(point.dataset.lng);
+
+      var marker = new google.maps.Marker({
+      position: {lat: $lat, lng: $lng},
+      map: map
+      });
+    });
+  }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
+</script>
+
+
+
+<script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script>
   function activatePlacesSearch(){

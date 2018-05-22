@@ -22,16 +22,20 @@ class IndexController < ApplicationController
   end
 
   def submit_incident
-    payload = make_payload(params[:address])
+    if params[:description].empty? || params[:address].empty?
+      redirect_to :action => "fileform"
+    else
+      payload = make_payload(params[:address])
 
-    lat = payload["results"][0]["geometry"]["location"]["lat"]
-    lng = payload["results"][0]["geometry"]["location"]["lng"]
-    desc = params[:description]
-    address = params[:address]
+      lat = payload["results"][0]["geometry"]["location"]["lat"]
+      lng = payload["results"][0]["geometry"]["location"]["lng"]
+      desc = params[:description]
+      address = params[:address]
 
-    Incident.create(:latitude => lat, :longitude => lng, :description => desc, :address => address)
+      Incident.create(:latitude => lat, :longitude => lng, :description => desc, :address => address)
 
-    redirect_to :action => "index"
+      redirect_to :action => "index"
+    end
   end
 
   def index
