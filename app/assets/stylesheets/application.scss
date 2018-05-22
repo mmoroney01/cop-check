@@ -1,0 +1,59 @@
+@import 'bootstrap';
+
+h1.copcheck-logo {
+	border-style: solid;
+	border-color: black;
+	text-align: left;
+	margin-left: 2%;
+	width: 15%;
+}
+
+div.search-bar-div {
+    width: 100%;
+    text-align:center;
+}
+
+div.file-incident-form-div {
+	margin-left: 2%;
+	width: 100%;
+}
+
+.incident {
+	float: left;
+	margin-left: 2%;
+}
+
+#incident-description {
+	width: 40%;
+}
+
+#incident-list {
+	border-color: black;
+	border-style: solid;
+	float: left;
+	height: 100px;
+	overflow: auto;
+	margin-left: 2%;
+}
+
+#map {
+	border-color: black;
+	border-style: solid;
+	float: right;
+	height: 400px;
+	margin-right: 2%;
+    width: 40%;
+}
+
+#search {
+	display: inline-block;
+	width: 40%;
+}
+
+.single-incident {
+	margin-left: 2%;
+}
+
+textarea {
+	resize: none;
+}
