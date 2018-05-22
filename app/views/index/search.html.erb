@@ -3,22 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+
 </head>
 <body>
 
-<div id="incident-list">
-  <h4 class="incidents-near">Incidents Near <%= @address %></h4>
-  <% @incidents.each do |incident| %>
-    <div class="incident">
-      <a href="/incident/<%= incident.id %>"><%= incident.address %></a>
-      <br>
-      <%= incident.description %>
-      <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
-      </div>
-    </div>
-    <br>
-  <% end %>
-</div>
+
 
 <!-- <script>
     (function($){
@@ -28,15 +17,38 @@
     })(jQuery);
 </script> -->
 
-<div class="search-bar-and-map">
-  <div class="search-bar-div">
-    <form action="/search" method="get" class="search-bar">
-      <input type="text" name="address" id="search" placeholder="search for police activity in your area">
-      <button id="search-button" type="submit">Search</button>
-    </form>
-  </div>
+<div id="search-bar-and-map-and-feed">
+  <div class="search-bar-and-map">
+    <div class="search-bar-div">
+      <form action="/search" method="get" class="search-bar">
+        <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+        <button id="search-button" type="submit">Search</button>
+      </form>
+    </div>
     
-  <div id="map"></div>
+    <div id="map"></div>
+  </div>
+  
+  <div id="incidents-near">
+    <% if !@incidents.empty? %>
+    <h4>Incidents Near <%= @address %></h4>
+    <% else %>
+    <h4 id="no-incidents">No Incidents Nearby!</h4>
+    <% end %>
+  </div>
+
+  <div id="incident-list">
+     <% @incidents.each do |incident| %>
+      <div class="incident">
+        <a href="/incident/<%= incident.id %>"><%= incident.address %></a>
+        <br>
+        <%= incident.description %>
+        <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
+        </div>
+      </div>
+      <br>
+    <% end %>
+  </div>
 </div>
 
 <script>
@@ -67,7 +79,7 @@
 
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  -->
-<script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- <script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script> -->
 
 <script>
   function activatePlacesSearch(){
