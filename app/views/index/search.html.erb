@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/stylesheets/jquery.mCustomScrollbar.css" />
 </head>
 <body>
 
@@ -21,6 +23,14 @@
     <br>
   <% end %>
 </div>
+
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
     
 <div id="map"></div>
 
@@ -49,5 +59,9 @@
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
 </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
 </body>
 </html>

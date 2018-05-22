@@ -12,11 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui
  */
 
 h1.copcheck-logo {
+	border-style: solid;
+	border-color: black;
 	text-align: left;
 	margin-left: 2%;
+	width: 15%;
 }
 
 div.search-bar-div {
@@ -39,11 +43,17 @@ div.file-incident-form-div {
 }
 
 #incident-list {
+	border-color: black;
+	border-style: solid;
 	float: left;
+	max-height: 100%
+	overflow: auto;
 	margin-left: 2%;
 }
 
 #map {
+	border-color: black;
+	border-style: solid;
 	float: right;
 	height: 400px;
 	margin-right: 2%;
