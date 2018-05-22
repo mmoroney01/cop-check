@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
 
@@ -22,13 +22,13 @@
 </div>
 
 <script>
-	function activatePlacesSearch(){
-		var input = document.getElementById('search');
-		var autocomplete = new google.maps.places.Autocomplete(input);
-	}
+  function activatePlacesSearch(){
+    var input = document.getElementById('search');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  }
 </script>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch"></script>
-	
+
 </body>
 </html>
