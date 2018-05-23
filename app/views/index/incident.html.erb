@@ -3,18 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
-<div class="incident" data-lat=<%= @incident.latitude %> data-lng=<%= @incident.longitude%>>
-	<div class="single-incident">
-	<%= @incident.address %>
-	<br>
-	<%= @incident.description %>
-	</div>
-</div>
+<div id="incident-page">
+  <div class="nav-bar">
 
-<div id="map"></div>
+    <div class="copcheck-logo">
+      <h3><a href="/">Cop Check</a></h3>
+    </div>
+
+    <div class="file-incident-button-div">
+      <form action="/file" method="get">
+      <button id="file-incident-button" type="submit">File Incident</button>
+      </form>
+    </div>
+
+  </div>
+  
+  <div id="incident-map">
+    <div id="map"></div>
+  </div>
+
+  <div class="incident" data-lat=<%= @incident.latitude %> data-lng=<%= @incident.longitude%>>
+    <div class="single-incident">
+    <%= @incident.address %>
+    <br>
+    <%= @incident.description %>
+    </div>
+  </div>
+
+
+</div>
 <script>
   function initMap() {
   	var point = document.querySelector('.incident')

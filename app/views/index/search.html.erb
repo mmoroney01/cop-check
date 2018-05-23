@@ -4,18 +4,14 @@
   <meta charset="UTF-8">
   <title>Document</title>
 
+  <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+  </style>
 </head>
 <body>
-
-
-
-<!-- <script>
-    (function($){
-        $(window).on("load",function(){
-            $(".content").mCustomScrollbar();
-        });
-    })(jQuery);
-</script> -->
 
 <div id="search-page">
   
@@ -77,7 +73,7 @@
   function initMap() {
     var center = {lat: <%= @lat %>, lng: <%= @lng %>};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
+      zoom: 14,
       center: center
     });
     
@@ -99,8 +95,6 @@
     src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
 </script>
 
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- -->
 <script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script>

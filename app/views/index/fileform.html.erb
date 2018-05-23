@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
-<div id="file-incident-form-div">
-  <form action="/submit_incident" method="post" class="file-incident-address-bar">
-    <input type="text" name="address" id="incident-search" placeholder="Where did this happen?"><br>
-    <textarea name="description" rows="14" id="incident-description" placeholder="What happened?"></textarea><br>
-    <button id="submit-incident-button" type="submit">File Incident</button>
-  </form>
+<div id="fileform-page">
+  <div class="nav-bar">
+    <div class="copcheck-logo">
+      <h3><a href="/">Cop Check</a></h3>
+    </div>
+  </div>
+
+  <div id="file-incident-form-div">
+    <form action="/submit_incident" method="post" class="file-incident-address-bar">
+      <input type="text" name="address" id="incident-search" placeholder="Where did this happen?"><br>
+      <textarea name="description" rows="14" id="incident-description" placeholder="What happened?"></textarea><br>
+      <button id="submit-incident-button" type="submit">File Incident</button>
+    </form>
+  </div>
 </div>
 
 <script>
 	function activatePlacesSearch(){
-		var input = document.getElementById('search');
+		var input = document.getElementById('incident-search');
 		var autocomplete = new google.maps.places.Autocomplete(input);
 	}
 </script>

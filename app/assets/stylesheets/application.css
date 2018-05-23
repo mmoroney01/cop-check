@@ -1,4 +1,8 @@
 
+html {
+/*	background-color: #33cccc;*/
+}
+
 h3, h4 {
 	padding: 0px;
     margin: 1px;
@@ -10,11 +14,33 @@ h3, h4 {
 
 .file-incident-button-div {
  	float: right;
+ 	margin-left: 1%;
+}
+
+#file-incident-form-div {
+	border-color: black;
+	border-style: solid;
+	margin-top: 2%;
+}
+
+
+#fileform-page {
+	margin: 2% 2% 2% 2%;
+	min-height: 100%;
 }
 
 #incidents-near-and-list{
 	float: left;
 	flex: 1;
+}
+
+#incident-map {
+	margin-top: 2%;
+}
+
+#incident-page {
+	margin: 2% 2% 2% 2%;
+	min-height: 100%;
 }
 
 #index-page {
@@ -73,14 +99,6 @@ h3, h4 {
 
 
 
-#file-incident-form-div {
-	border-color: black;
-	border-style: solid;
-	position: absolute;
-	top: 14%;
-	left: 5%;
-	width: 50%;
-}
 
 
 #file-incident-button {
