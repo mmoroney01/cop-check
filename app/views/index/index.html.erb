@@ -42,6 +42,11 @@
 </div>
 
 <script>
+  function activatePlacesSearch() {
+    var input = document.getElementById('search');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  }
+
   function initMap() {
     var center = {lat: 37, lng: -97};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -51,20 +56,14 @@
   }
 </script>
 
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
-</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch" async defer></script>
 
 <script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
-<script>
-  function activatePlacesSearch(){
-    var input = document.getElementById('search');
-    var autocomplete = new google.maps.places.Autocomplete(input);
-  }
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap" async defer>
 </script>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch"></script>
+
 
 </body>
 </html>
