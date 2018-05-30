@@ -1,12 +1,8 @@
 
 $(".incident-list").remove();
-
+$(".incident-list-div").show();
 $(".incident-list-div").empty();
-
 $("#map").remove()
-
 $(".search-bar-and-map").append("<%= j render(:partial => 'incidents/map') %>");
-
 $(".incident-list-div").append("<%= j render(:partial => 'incidents/incident_list') %>");
-
 $("#search").val('');

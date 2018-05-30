@@ -15,7 +15,7 @@ class IncidentsController < ApplicationController
       @lng = payload["results"][0]["geometry"]["location"]["lng"]
 
       @incidents = Incident.all
-      @incidents = @incidents.select{|incident| distance([@lat, @lng], [incident.latitude, incident.longitude]) <= 2}
+      @incidents = @incidents.select{|incident| distance([@lat, @lng], [incident.latitude, incident.longitude]) <= 5}
 
       respond_to do |f|
         f.html { redirect_to root_path }
@@ -57,7 +57,7 @@ class IncidentsController < ApplicationController
 
   def see_incident
     @incident = Incident.find(params[:id])
-
+    flash.now[:error] = "Your book was not found"
     render 'incident'
   end
 
