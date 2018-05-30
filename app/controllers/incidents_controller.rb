@@ -5,7 +5,7 @@ require 'geokit'
 class IncidentsController < ApplicationController
   def search
     if params[:address].empty?
-      redirect_to :action => "index"
+      redirect_to root_path
     else
       payload = make_payload(params[:address])
 
@@ -17,7 +17,10 @@ class IncidentsController < ApplicationController
       @incidents = Incident.all
       @incidents = @incidents.select{|incident| distance([@lat, @lng], [incident.latitude, incident.longitude]) <= 2}
 
-      render 'search'
+      respond_to do |f|
+        f.html { redirect_to root_path }
+        f.js
+      end
     end
   end
 
