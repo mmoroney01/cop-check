@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+  </style>
+</head>
+<body>
+
+<div id="search-page">
+  
+  <div class="nav-bar">
+
+    <div class="copcheck-logo">
+      <h3><a href="/">Cop Check</a></h1>
+    </div>
+
+    <div class="file-incident-button-div">
+      <form action="/file" method="get">
+      <button id="file-incident-button" type="submit">File Incident</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="search-bar-map-incidents">
+
+    <div class="search-bar-and-map">
+      <div class="search-bar-div">
+        <form action="/search" method="get" class="search-bar">
+          <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+    
+      <div id="map"></div>
+    </div>
+  
+    <div id="incidents-near-and-list">
+      <div id="incidents-near">
+        <% if !@incidents.empty? %>
+        <h4>Incidents Near <%= @address %></h4>
+        <% else %>
+        <h4 id="no-incidents">No Incidents Nearby!</h4>
+        <% end %>
+      </div>
+
+      <div id="incident-list">
+         <ul>
+         <% @incidents.each do |incident| %>
+          <div class="incident">
+            <li><a href="/incident/<%= incident.id %>"><%= incident.address %></a></li>
+            <br>
+            <%= incident.description %>
+            <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
+            </div>
+          </div>
+          <br>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initMap() {
+    var center = {lat: <%= @lat %>, lng: <%= @lng %>};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: center
+    });
+    
+    var points = document.querySelectorAll('.lat-lng')
+
+    points.forEach((point) => {
+      var $lat = parseFloat(point.dataset.lat);
+      var $lng = parseFloat(point.dataset.lng);
+
+      var marker = new google.maps.Marker({
+      position: {lat: $lat, lng: $lng},
+      map: map
+      });
+    });
+  }
+</script>
+
+<script>
+  function activatePlacesSearch(){
+    var input = document.getElementById('search');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  }
+</script>
+        
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap" async defer>
+</script>
+</body>
+</html>

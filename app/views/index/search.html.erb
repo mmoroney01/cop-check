@@ -90,12 +90,6 @@
     });
   }
 </script>
-        
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
-</script>
-
-<script src="./assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script>
   function activatePlacesSearch(){
@@ -103,8 +97,10 @@
     var autocomplete = new google.maps.places.Autocomplete(input);
   }
 </script>
-
+        
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch"></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap" async defer>
+</script>
 </body>
 </html>

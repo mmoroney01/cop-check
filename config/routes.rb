@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
-	root to: 'index#index'
+	# root to: 'index#index'
+
+	root :controller => 'index', :action => 'index'
 	
-	get '/' => 'index#index'
-	get '/search' => 'index#search'
-	get '/file' => 'index#fileform'
+	# get '/' => 'index#index'
 
-	post '/file' => 'index#fileform'
-	post '/submit_incident' => 'index#submit_incident'
+	get '/search' => 'incidents#search'
+	get '/file' => 'incidents#fileform'
 
-	get '/incident/:id' => 'index#see_incident'
+	post '/file' => 'incidents#fileform'
+	post '/submit_incident' => 'incidents#submit_incident'
+
+	get '/incident/:id' => 'incidents#see_incident'
 
 end
