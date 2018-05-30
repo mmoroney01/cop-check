@@ -14,14 +14,13 @@
 <body>
 
 <div id="index-page">
-
   <div class="nav-bar">
     <div class="copcheck-logo">
       <h3><a href="/">Cop Check</a></h1>
     </div>
 
     <div class="file-incident-button-div">
-      <form action="/file" method="get">
+      <form action="/fileform" data-remote="true" method="get">
       <button id="file-incident-button" type="submit">File Incident</button>
       </form>
     </div>
@@ -29,12 +28,14 @@
 
   <br>
 
+  <div class="file-incident-form-div">
+  </div>
+
   <div class="search-bar-map-incident-div">
     <div class="search-bar-and-map">
-
       <div class="search-bar-div">
         <form action="/search" method="get" data-remote="true" class="search-bar">
-          <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+          <input type="text" name="address" id="search" placeholder="search for police activity">
           <button class="search-button" type="submit">Search</button>
         </form>
       </div>
