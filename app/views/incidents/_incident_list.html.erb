@@ -1,23 +1,23 @@
-<!--     <div id="incidents-near-and-list">
-      <div id="incidents-near">
-        <% if !@incidents.empty? %>
-        <h4>Incidents Near <%= @address %></h4>
-        <% else %>
-        <h4 id="no-incidents">No Incidents Nearby!</h4>
-        <% end %>
-      </div> -->
+<div id="incidents-near-and-list">
+  <div id="incidents-near">
+    <% if !@incidents.empty? %>
+      <h4>Incidents Near <%= @address %></h4>
+    <% else %>
+      <h4 id="no-incidents">No Incidents Nearby!</h4>
+    <% end %>
+  </div>
 
-      <div id="incident-list">
-         <ul>
-         <% @incidents.each do |incident| %>
-          <div class="incident">
-            <li><a href="/incident/<%= incident.id %>"><%= incident.address %></a></li>
+  <div id="incident-list">
+    <ul>
+      <% @incidents.each do |incident| %>
+        <div class="incident">
+          <li><a href="/incident/<%= incident.id %>"><%= incident.address %></a></li>
             <br>
-            <%= incident.description %>
-            <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
-            </div>
+          <%= incident.description %>
+          <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
           </div>
-          <br>
-        <% end %>
-        </ul>
-      </div>
+        </div>
+        <br>
+      <% end %>
+    </ul>
+  </div>

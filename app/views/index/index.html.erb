@@ -16,7 +16,6 @@
 <div id="index-page">
 
   <div class="nav-bar">
-
     <div class="copcheck-logo">
       <h3><a href="/">Cop Check</a></h1>
     </div>
@@ -26,21 +25,23 @@
       <button id="file-incident-button" type="submit">File Incident</button>
       </form>
     </div>
-
   </div>
 
-  <div class="search-bar-and-map">
-    <div class="search-bar-div">
-      <form action="/search" method="get" data-remote="true" class="search-bar">
-        <input type="text" name="address" id="search" placeholder="search for police activity in your area">
-        <button class="search-button" type="submit">Search</button>
-      </form>
+  <br>
+
+  <div class="search-bar-map-incident-div">
+    <div class="search-bar-and-map">
+
+      <div class="search-bar-div">
+        <form action="/search" method="get" data-remote="true" class="search-bar">
+          <input type="text" name="address" id="search" placeholder="search for police activity in your area">
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    
-<!--     <div id="map"></div> -->
-  </div>
 
-  <div class="incident-list-div">
+    <div class="incident-list-div">
+    </div>
   </div>
 </div>
 
@@ -49,18 +50,7 @@
     var input = document.getElementById('search');
     var autocomplete = new google.maps.places.Autocomplete(input);
   }
-
-  // function initMap() {
-  //   var center = {lat: 37, lng: -97};
-  //   var map = new google.maps.Map(document.getElementById('map'), {
-  //     zoom: 3,
-  //     center: center
-  //   });
-  // }
 </script>
-
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
-</script> -->
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_PLACES'] %>&libraries=places&callback=activatePlacesSearch" async defer></script>
 
