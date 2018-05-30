@@ -1,0 +1,27 @@
+
+<div id="map"></div>
+
+<script>
+  function initMap() {
+    var center = {lat: <%= @lat %>, lng: <%= @lng %>};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: center
+    });
+    
+    var points = document.querySelectorAll('.lat-lng')
+
+    points.forEach((point) => {
+      var $lat = parseFloat(point.dataset.lat);
+      var $lng = parseFloat(point.dataset.lng);
+
+      var marker = new google.maps.Marker({
+      position: {lat: $lat, lng: $lng},
+      map: map
+      });
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS']%>&callback=initMap">
+</script>
