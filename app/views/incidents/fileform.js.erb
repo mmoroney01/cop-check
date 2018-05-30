@@ -1,4 +1,6 @@
 
+$("#fileform-page").remove();
+
 $(".search-bar-map-incident-div").hide();
 
-$(".file-incident-form-div").append("<%= j render(:partial => 'incidents/incident_form') %>")
+$(".file-incident-form-append").append("<%= j render(:partial => 'incidents/incident_form') %>")

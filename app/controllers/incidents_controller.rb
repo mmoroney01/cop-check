@@ -26,7 +26,11 @@ class IncidentsController < ApplicationController
 
   def submit_incident
     if params[:description].empty? || params[:address].empty?
-      redirect_to :action => "fileform"
+
+      respond_to do |f|
+        f.html { redirect_to root_path }
+        f.js
+      end
     else
       payload = make_payload(params[:address])
 
