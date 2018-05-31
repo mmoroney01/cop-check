@@ -61,7 +61,10 @@ class IncidentsController < ApplicationController
   def see_incident
     @incident = Incident.find(params[:id])
     
-    render 'incident'
+    respond_to do |f|
+      f.html { redirect_to root_path }
+      f.js
+    end
   end
 
 

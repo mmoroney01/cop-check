@@ -4,10 +4,16 @@ body {
   background-size: 100%;
 }
 
+ul {
+	margin-bottom: 0%;
+}
+
 h3, h4 {
 	padding: 0px;
     margin: 1px;
 }
+
+
 
 .copcheck-logo {
 	float: left;
