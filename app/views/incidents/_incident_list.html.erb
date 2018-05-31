@@ -1,8 +1,10 @@
 <div id="incidents-near-and-list">
   <div id="incidents-near">
     <% if !@incidents.empty? %>
+      <br>
       <h4 class="incidents-near-text">Incidents near <%= @address %></h4>
     <% else %>
+      <br>
       <h4 id="no-incidents">No incidents nearby!</h4>
     <% end %>
   </div>
@@ -11,7 +13,7 @@
     <ul>
       <% @incidents.each do |incident| %>
         <div class="incident">
-          <li><a href="/incident/<%= incident.id %>"><%= incident.address %></a></li>
+          <li><a href="/incident/<%= incident.id %>" data-remote="true"><%= incident.address %></a></li>
           <%= incident.description %>
           <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
           </div>
