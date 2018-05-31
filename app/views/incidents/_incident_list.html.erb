@@ -12,7 +12,6 @@
       <% @incidents.each do |incident| %>
         <div class="incident">
           <li><a href="/incident/<%= incident.id %>"><%= incident.address %></a></li>
-            <br>
           <%= incident.description %>
           <div class="lat-lng" data-lat=<%= incident.latitude %> data-lng=<%= incident.longitude%>>
           </div>

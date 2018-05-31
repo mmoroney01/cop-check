@@ -53,9 +53,9 @@ class IncidentsController < ApplicationController
 
   def fileform
     respond_to do |f|
-        f.html { redirect_to root_path }
-        f.js
-      end
+      f.html { redirect_to root_path }
+      f.js
+    end
   end
 
   def see_incident

@@ -1,11 +1,6 @@
 
-html {
-/*	background-color: #33cccc;*/
-}
-
 body {
   background: url('bluecopcheckbackground.jpeg');
-  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -54,6 +49,12 @@ h3, h4 {
 	text-align: center;
 }
 
+#incidents-near-and-list {
+	background-color: #ffffff;
+}
+
+
+
 #index-page {
 	margin: 2% 2% 2% 2%;
 	min-height: 100%;
@@ -85,9 +86,9 @@ h3, h4 {
 }
 
 .search-button {
-	color: #0099CC;
+	color: #ff0000;
 	background-color: transparent;
-	border: 2px solid #0099CC;
+	border: 2px solid #ff0000;
 	border-radius: 5px;
 	text-transform: uppercase;
 }
@@ -98,9 +99,9 @@ h3, h4 {
 }
 
 #file-incident-button {
-  color: #0099CC;
+  color: #ff0000;
   background-color: transparent;
-  border: 2px solid #0099CC;
+  border: 2px solid #ff0000;
   border-radius: 5px;
   text-transform: uppercase;
 }
@@ -126,9 +127,9 @@ h3, h4 {
 }
 
 #submit-incident-button {
-  color: #0099CC;
+  color: #ff0000;
   background-color: transparent;
-  border: 2px solid #0099CC;
+  border: 2px solid #ff0000;
   border-radius: 5px;
   text-transform: uppercase;
   display: block;
@@ -137,9 +138,9 @@ h3, h4 {
 }
 
 #submit-incident-back-button {
-  color: #0099CC;
+  color: #ff0000;
   background-color: transparent;
-  border: 2px solid #0099CC;
+  border: 2px solid #ff0000;
   border-radius: 5px;
   text-transform: uppercase;
   display: block;
