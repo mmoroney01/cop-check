@@ -3,6 +3,12 @@ html {
 /*	background-color: #33cccc;*/
 }
 
+body {
+  background: url('bluecopcheckbackground.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 h3, h4 {
 	padding: 0px;
     margin: 1px;

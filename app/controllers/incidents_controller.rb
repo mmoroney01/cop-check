@@ -60,7 +60,7 @@ class IncidentsController < ApplicationController
 
   def see_incident
     @incident = Incident.find(params[:id])
-    flash.now[:error] = "Your book was not found"
+    
     render 'incident'
   end
 
