@@ -5,7 +5,10 @@ require 'geokit'
 class IncidentsController < ApplicationController
   def search
     if params[:address].empty?
-      redirect_to root_path
+      respond_to do |f|
+        f.html { redirect_to root_path }
+        f.js { render "search_fail.js.erb" }
+      end
     else
       payload = make_payload(params[:address])
 
@@ -29,7 +32,7 @@ class IncidentsController < ApplicationController
 
       respond_to do |f|
         f.html { redirect_to root_path }
-        f.js
+        f.js { render "submit_fail.js.erb" }
       end
     else
       payload = make_payload(params[:address])
@@ -57,7 +60,7 @@ class IncidentsController < ApplicationController
 
   def see_incident
     @incident = Incident.find(params[:id])
-    flash.now[:error] = "Your book was not found"
+    
     render 'incident'
   end
 
