@@ -1,3 +1,9 @@
+<%# Consider refactoring this for the if to be
+if @incidents.empty?
+  -> no incidents display 
+else
+--> display list of incidents%>
+
 <div id="incidents-near-and-list">
   <div id="incidents-near">
     <% if !@incidents.empty? %>
